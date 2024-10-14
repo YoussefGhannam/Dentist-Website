@@ -7,7 +7,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" type="image/png" href="/assets/logo_dentaire-Bc7fMetG.png">
+    <link rel="icon" type="image/png" href="./images/logo_dentaire.png">
     <meta name="theme-color" content="#00b8b8"> 
     <script
         type="text/javascript"
@@ -30,18 +30,17 @@
     <!--font awesome cdn link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!--custom style file link-->
+    <!--custom style file link-->
+    <link rel="stylesheet" href="./style.css">
 
     <!--bootstrap cdn link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script type="module" crossorigin src="/assets/index-DEtDgaA7.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-ocs3CvfR.css">
 </head>
 <body>
     <header class="header fixed-top" id="header">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                    <a href="#home" class="logo" ><img src="/assets/logo_dentaire-Bc7fMetG.png" width="72px" height="72px" /></a>
+                    <a href="#home" class="logo" ><img src="./images/logo_dentaire.png" width="72px" height="72px" /></a>
 
                     <nav class="nav">
                         <a href="#home">الرئيسية</a>
@@ -75,7 +74,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 image">
-                    <img src="/assets/about-img-BMN3vHff.jpg" alt="" class="w-100 mb-4 mb-md-0">
+                    <img src="./images/about-img.jpg" alt="" class="w-100 mb-4 mb-md-0">
                 </div>
 
                 <div class="col-md-6 content">
@@ -444,18 +443,77 @@
 
     <div class="social_media">
         <a target="_blank" href="https://wa.me/212633057859">
-            <img src="/assets/wa_logo-DlMbdPR5.png" width="32" height="32" alt="WhatsApp Logo" />
+            <img src="./images/wa_logo.png" width="32" height="32" alt="WhatsApp Logo" />
         </a>
         <a target="_blank" href="https://www.instagram.com/prothdentaire?igsh=dHd0OXE1NDYxYXln">
-            <img src="/assets/ig_logo-BqYDARws.png" width="37" height="37" alt="Instagram Logo" />
+            <img src="./images/ig_logo.png" width="37" height="37" alt="Instagram Logo" />
         </a>
         <a target="_blank" href="https://www.facebook.com/profile.php?id=100093174560721&mibextid=LQQJ4d">
-            <img src="/assets/fb_logo-OyJVFIgi.png" width="37" height="37" alt="Facebook Logo" />
+            <img src="./images/fb_logo.png" width="37" height="37" alt="Facebook Logo" />
         </a>
     </div>
     
-    <script src="./index.js"></script>
-    </script>
+    <script src="./index.js"></script>
+    <script type="module">
+      (function () {
+        emailjs.init({
+          publicKey: import.meta.env.VITE_EMAILJS_API_KEY,
+        });
+      })();
+    </script>
+    </script>
+    <script type="module">
+          window.onload = function () {
+            document
+              .getElementById("contact-form")
+              .addEventListener("submit", function (event) {
+                event.preventDefault();
+                emailjs
+                  .sendForm(
+                    import.meta.env.VITE_EMAILSJS_SERVICE_ID,
+                    import.meta.env.VITE_EMAILSJS_TEMPLATE_ID,
+                    this
+                  )
+                  .then(
+                    function (response) {
+                      const successToast = Toastify({
+                        text: "Tout s'est bien passé, merci pour votre rendez-vous.",
+                        duration: 5000,
+                        newWindow: true,
+                        close: true,
+                        gravity: "bottom",
+                        position: "right",
+                        stopOnFocus: true,
+                        style: {
+                          background:
+                            "linear-gradient(to right, #6a11cb, #2575fc)" /* A calming blue gradient */,
+                        },
+                        onClick: function () {},
+                      }).showToast();
+                      successToast.toastElement.id = "messageSuccess";
+                    },
+                    (error) => {
+                      console.log(error);
+                      const errorToast = Toastify({
+                        text: "Une erreur est survenue. Merci de renvoyer.",
+                        duration: 5000,
+                        newWindow: true,
+                        close: true,
+                        gravity: "bottom",
+                        position: "right",
+                        stopOnFocus: true,
+                        style: {
+                          background:
+                            "linear-gradient(to right, #6a11cb, #2575fc)" /* A calming blue gradient */,
+                        },
+                        onClick: function () {},
+                      }).showToast();
+                      errorToast.toastElement.id = "messageError";
+                    }
+                  );
+              });
+          };
+        </script>
         <script>
             const modals = document.querySelectorAll('[id^="modalList"]');
             

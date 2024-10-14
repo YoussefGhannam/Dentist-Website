@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="/assets/logo_dentaire-Bc7fMetG.png">
+    <meta name="theme-color" content="#00b8b8"> 
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> صانع اسنان في مرتيل </title>
+
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--custom style file link-->
+
+    <!--bootstrap cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="module" crossorigin src="/assets/index-DEtDgaA7.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-ocs3CvfR.css">
+</head>
+<body>
+    <header class="header fixed-top" id="header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                    <a href="#home" class="logo" ><img src="/assets/logo_dentaire-Bc7fMetG.png" width="72px" height="72px" /></a>
+
+                    <nav class="nav">
+                        <a href="#home">الرئيسية</a>
+                        <a href="#about">الخدمات</a>              
+                        <!-- <a href="#services">المنتجات</a> -->
+                        <!-- <a href="#reviews">التعليقات</a> -->
+                        <a href="#contact">اتصل بنا</a>
+                    </nav>
+
+                    <a href="#contact" class="link-btn">احجز موعدك</a>
+
+                    <div id="menu-btn" class="fas fa-bars"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="container">
+            <div class="row min-vh-100 align-items-center">
+                <div class="content text-left text-md-left">
+                    <h3>مركز العناية بالأسنان</h3>
+                    <p>استمتع بأفضل خدمات العناية بالأسنان في مختبرنا الخاص، حيث يلتقي التميز بالابتكار. تقنيات حديثة، فريق متخصص، وابتسامات مشرقة تنتظرك. اكتشف جمال صحتك الفموية معنا اليوم.</p>
+                    <a href="#contact" class="link-btn">احجز موعدك</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--section à propos-->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 image">
+                    <img src="/assets/about-img-BMN3vHff.jpg" alt="" class="w-100 mb-4 mb-md-0">
+                </div>
+
+                <div class="col-md-6 content">
+                    <span>معلومات عنا</span>
+                    <h3>كل ما يحتاجه ابتسامتك</h3>
+                    <p>لدينا جميع الخدمات اللازمة لابتسامة صحية وواثقة، بالإضافة إلى تجربة مرضى لا مثيل لها. نحن يفتخرون بالاعتراف بهم من قبل المجتمعات التي نعيش فيها ونخدمها!</p>
+                    <ul class="list-group">
+                        <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+        data-media='["path/to/image1.jpg", "path/to/image2.jpg"]' 
+        data-title="تركيب وتغليف الأسنان" 
+        data-videos='["path/to/video1.mp4"]' 
+        data-price="1000 MAD">
+        تركيب وتغليف الأسنان
+    </li>
+    <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+        data-media='["path/to/image3.jpg"]' 
+        data-title="ترميم الاسنان المكسورة" 
+        data-videos='["path/to/video2.mp4"]' 
+        data-price="800 MAD">
+        ترميم الاسنان المكسورة
+    </li>
+    <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+        data-media='["path/to/image4.jpg"]' 
+        data-title="حشو الاسنان (العمارة)" 
+        data-videos='["path/to/video3.mp4"]' 
+        data-price="500 MAD">
+        حشو الاسنان (العمارة)
+    </li>
+    <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+        data-media='["path/to/image5.jpg"]' 
+        data-title="تبيض الاسنان بالطريقة الصحيحة و الطبيعية" 
+        data-videos='["path/to/video4.mp4"]' 
+        data-price="600 MAD">
+        تبيض الاسنان بالطريقة الصحيحة و الطبيعية
+    </li>
+    <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+        data-media='["snaponsmile/snaponsmile1.jpeg"]' 
+        data-title="هوليوود سمايل و سناب سمايل" 
+        data-videos='["path/to/video5.mp4"]' 
+        data-price="1500 MAD">
+        هوليوود سمايل و سناب سمايل
+    </li>
+    <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+        data-media='["facettes/facite1.jpeg", "facettes/facite2.jpeg", "facettes/facite3.jpeg", "facettes/facite4.jpeg", "facettes/facite6.jpeg", "facettes/facite8.jpeg"]' 
+        data-title="les facettes composite" 
+        data-videos='["facettes/facite5.mp4", "facettes/facite7.mp4", "facettes/facite9.mp4"]' 
+        data-price="1200 MAD">
+        les facettes composite
+    </li>
+    <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+        data-media='["path/to/image7.jpg"]' 
+        data-title="طقم الاسنان" 
+        data-videos='["path/to/video6.mp4"]' 
+        data-price="700 MAD">
+        طقم الاسنان
+    </li>
+    <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+        data-media='["path/to/image8.jpg"]' 
+        data-title="لباغ تقويم اسنان" 
+        data-videos='["path/to/video7.mp4"]' 
+        data-price="900 MAD">
+        لباغ تقويم اسنان
+    </li>
+    <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+        data-media='["path/to/image9.jpg"]' 
+        data-title="تزيين اسنان" 
+        data-videos='["path/to/video8.mp4"]' 
+        data-price="400 MAD">
+        تزيين اسنان
+    </li>
+                    </ul>
+
+                <!-- Modal -->
+                <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body text-center">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <h5 id="galleryTitle" class="mb-3"></h5>
+                                <img id="modalImage" class="img-fluid d-none" width="40%" />
+                                <video id="modalVideo" controls width="50%" class="d-none">
+                                    <source id="videoSource" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="mt-3">
+                                    <button id="prevButton" class="btn btn-secondary">→</button>
+                                    <button id="nextButton" class="btn btn-secondary">←</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <script>
+                    const modal = document.getElementById('galleryModal');
+                    const modalImage = document.getElementById('modalImage');
+                    const modalVideo = document.getElementById('modalVideo');
+                    const videoSource = document.getElementById('videoSource');
+                    const galleryTitle = document.getElementById('galleryTitle');
+                    
+                    let mediaList = [];
+                    let currentIndex = 0;
+
+                    modal.addEventListener('show.bs.modal', event => {
+                        const button = event.relatedTarget;
+                        const media = button.getAttribute('data-media');
+                        const title = button.getAttribute('data-title');
+                        const videos = JSON.parse(button.getAttribute('data-videos') || "[]");
+                        
+                        // Set the title
+                        galleryTitle.textContent = title;
+                        
+                        // Prepare media list
+                        mediaList = [media, ...videos];
+                        currentIndex = 0;
+                        
+                        // Display the first media
+                        displayMedia(currentIndex);
+                    });
+
+                    function displayMedia(index) {
+                        const currentMedia = mediaList[index];
+
+                        if (currentMedia.endsWith('.mp4')) {
+                            modalVideo.classList.remove('d-none');
+                            modalImage.classList.add('d-none');
+                            videoSource.src = currentMedia;
+                            modalVideo.load();
+                        } else {
+                            modalImage.classList.remove('d-none');
+                            modalVideo.classList.add('d-none');
+                            modalImage.src = currentMedia;
+                        }
+
+                        document.getElementById('prevButton').disabled = index === 0;
+                        document.getElementById('nextButton').disabled = index === mediaList.length - 1;
+                    }
+
+                    document.getElementById('prevButton').addEventListener('click', () => {
+                        if (currentIndex > 0) {
+                            currentIndex--;
+                            displayMedia(currentIndex);
+                        }
+                    });
+
+                    document.getElementById('nextButton').addEventListener('click', () => {
+                        if (currentIndex < mediaList.length - 1) {
+                            currentIndex++;
+                            displayMedia(currentIndex);
+                        }
+                    });
+                    modal.addEventListener('show.bs.modal', event => {
+                        const button = event.relatedTarget;
+                        const media = JSON.parse(button.getAttribute('data-media'));
+                        const title = button.getAttribute('data-title');
+                        const videos = JSON.parse(button.getAttribute('data-videos') || "[]");
+                        const price = button.getAttribute('data-price');
+                        
+                        // Set the title and price
+                        galleryTitle.textContent = title;
+                        
+                        // Prepare media list
+                        mediaList = [...media, ...videos];
+                        currentIndex = 0;
+                        
+                        // Display the first media
+                        displayMedia(currentIndex);
+                    
+                        // Display the price
+                        const priceElement = document.createElement('p');
+                        priceElement.textContent = `السعر: ${price}`;
+                        modal.querySelector('.modal-body').appendChild(priceElement);
+                    });
+                    modal.addEventListener('hide.bs.modal', () => {
+                        const priceElement = modal.querySelector('.modal-body p:last-child');
+                        if (priceElement) {
+                            priceElement.remove();
+                        }
+                    });
+                </script>
+                    <!-- <ul>
+                        <li> تركيب وتغليف الأسنان </li>
+                        <li>ترميم الاسنان المكسورة </li>
+                        <li>حشو الاسنان (العمارة) </li>
+                        <li>تبيض الاسنان بالطريقة الصحيحة و الطبيعية </li>
+                        <li>هوليوود سمايل و سناب سمايل </li>
+                        <li>les facettes composite </li>
+                        <li>طقم الاسنان </li>
+                        <li>لباغ تقويم اسنان </li>
+                        <li>تزيين اسنان </li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section des services
+    <section class="services" id="services">
+        <h1 class="heading">منتجانا</h1>
+        <div class="box-container container">
+            <div class="box">
+                <img src="./images/icon-1.svg" alt="">
+                <h3>متخصصو التقويم</h3>
+                <p>تقنية متقدمة للدقة والراحة</p>
+            </div>
+
+            <div class="box">
+                <img src="./images/icon-2.svg" alt="">
+                <h3>طب الأسنان التجميلي</h3>
+                <p>طب أسنان كامل الجودة يركز على الوقاية</p>
+            </div>
+
+            <div class="box">
+                <img src="./images/icon-3.svg" alt="">
+                <h3>خبراء صحة الفم</h3>
+                <p>رعاية شاملة للأسنان وتجربة مريحة ومريحة كما لا توجد أخرى.</p>
+            </div>
+
+            <div class="box">
+                <img src="./images/icon-4.svg" alt="">
+                <h3>متخصص في علاج الجذور</h3>
+                <p>معروف كواحد من أفضل الأطباء من قبل المرضى والأقران</p>
+            </div>
+
+            <div class="box">
+                <img src="./images/icon-5.svg" alt="">
+                <h3>استشارة الأسنان المباشرة</h3>
+                <p>الأطباء لدينا يفتخرون بالاعتراف بهم من قبل المجتمعات التي نعيش فيها ونخدمها!</p>
+            </div>
+
+            <div class="box">
+                <img src="./images/icon-6.svg" alt="">
+                <h3>فحص التسوس</h3>
+                <p>اخرج بابتسامة كبيرة، لأننا نعتني بابتسامتك</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- section du processus
+    <section class="process" id="process">
+        <h1 class="heading">عملية العلاج</h1>
+
+        <div class="box-container container">
+            <div class="box">
+                <img src="./images/process-1.png" alt="">
+                <h3>طب الأسنان التجميلي</h3>
+                <p>أسلوب رعاية الأسنان الاحترافية الذي يركز على تحسين مظهر أسنانك.</p>
+            </div>
+
+            <div class="box">
+                <img src="./images/process-2.png" alt="">
+                <h3>طب الأسنان للأطفال</h3>
+                <p>نركز على رعاية الأطفال من الطفولة المبكرة حتى المراهقة من أجل صحتهم الفموية.</p>
+            </div>
+
+            <div class="box">
+                <img src="./images/process-3.png" alt="">
+                <h3>طب الأسنان العام</h3>
+                <p>حالات طب الأسنان والإجراءات والجراحة. توصيات محدثة من الأقران.</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- section des avis
+    <section class="reviews" id="reviews">
+        <h1 class="heading">عملاؤنا الراضون</h1>
+        <div class="box-container container">
+            <div class="box">
+                <img src="./images/pic-1.png" alt="">
+                <p>طبيب أسنان ممتاز مع خدمة شخصية. أذهب دائمًا إلى الدكتور بوتر حتى لو كان طبيبي الرئيسي في لونغ بيتش. حقًا، تعال واستكشف هذا المكان.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>جوبين دراكو</h3>
+                <span>عميل راضٍ</span>
+            </div>
+
+            <div class="box">
+                <img src="./images/pic-2.png" alt="">
+                <p>أنا مريض جديد وقد كانت لدي واحدة من أكثر التجارب الممتعة التي مررت بها في طبيب أسنان. خلال الإجراء، كانت راحتي هي الأولوية المطلقة.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>هيرموني ويزلي</h3>
+                <span>عميل راضٍ</span>
+            </div>
+
+            <div class="box">
+                <img src="./images/pic-3.png" alt="">
+                <p>جئت لملء تسوس ووجدت أفضل خدمة. كانت عملية العلاج ممتعة ومريحة. الفريق رائع وودود للغاية.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>دارشان باتيل</h3>
+                <span>عميل راضٍ</span>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="contact" id="contact">
+        <h1 class="heading">حدد موعدك الان 😊</h1>
+
+        <form id="contact-form">
+            <span>اسمك:</span>
+            <input type="text" name="fullName" placeholder="أدخل اسمك" class="box">
+
+            <span>بريدك الإلكتروني:</span>
+            <input type="email" name="email" placeholder="أدخل بريدك الإلكتروني" class="box">
+
+            <span>رقمك:</span>
+            <input type="number" name="telephone" placeholder="أدخل رقم هاتفك" class="box">
+
+            <span>تاريخ الموعد:</span>
+            <input type="datetime-local" name="date" class="box">
+
+            <input type="submit" value="احجز موعدك" name="appointment" class="link-btn">
+        </form>
+    </section>
+
+    <!--section du pied de page-->
+    <section class="footer">
+        <div class="box-container container">
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <h3>رقم الهاتف</h3>
+                <p dir="ltr">+212 633057859</p>      
+            </div>
+
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>عنواننا</h3>
+                <p>ل ، ربوان اية قرب اطيل الضيمرتيافة</p>      
+            </div>
+
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <h3>البريد الإلكتروني</h3>
+                <p>bensoudacentre@gmail.com</p>      
+            </div>
+
+            <div class="box">
+                <i class="fas fa-clock"></i>
+                <h3>ساعات العمل</h3>
+                <p>24H / 24H</p>
+            </div>
+        </div>
+
+        <p class="credit">&copy; حقوق الطبع والنشر @ | 
+            <span>محمد بن سودة</span>
+        </p>
+        <p>
+            Developed By <a target="_blank" href="https://hamstify.xyz">Hamstify.</a>
+        </p>    
+    </section>
+
+    <div class="social_media">
+        <a target="_blank" href="https://wa.me/212633057859">
+            <img src="/assets/wa_logo-DlMbdPR5.png" width="32" height="32" alt="WhatsApp Logo" />
+        </a>
+        <a target="_blank" href="https://www.instagram.com/prothdentaire?igsh=dHd0OXE1NDYxYXln">
+            <img src="/assets/ig_logo-BqYDARws.png" width="37" height="37" alt="Instagram Logo" />
+        </a>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100093174560721&mibextid=LQQJ4d">
+            <img src="/assets/fb_logo-OyJVFIgi.png" width="37" height="37" alt="Facebook Logo" />
+        </a>
+    </div>
+    
+    <script src="./index.js"></script>
+    </script>
+        <script>
+            const modals = document.querySelectorAll('[id^="modalList"]');
+            
+            modals.forEach(modal => {
+                modal.addEventListener('show.bs.modal', event => {
+                    const button = event.relatedTarget; // Button that triggered the modal
+                    const media = button.getAttribute('data-media');
+                    const type = button.getAttribute('data-type');
+        
+                    const modalImage = modal.querySelector('img');
+                    const modalVideo = modal.querySelector('video');
+                    const videoSource = modal.querySelector('source');
+        
+                    if (type === 'video') {
+                        modalVideo.classList.remove('d-none');
+                        modalImage.classList.add('d-none');
+                        videoSource.src = media;
+                        modalVideo.load();
+                    } else {
+                        modalImage.classList.remove('d-none');
+                        modalVideo.classList.add('d-none');
+                        modalImage.src = media;
+                    }
+                });
+            });
+        </script>
+        
+</body>
+</html>
