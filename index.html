@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/png" href="/assets/logo_dentaire-Bc7fMetG.png">
@@ -30,8 +34,8 @@
 
     <!--bootstrap cdn link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script type="module" crossorigin src="/assets/index-BP4xZ51d.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-Cp4uQ8n2.css">
+  <script type="module" crossorigin src="/assets/index-DEtDgaA7.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-ocs3CvfR.css">
 </head>
 <body>
     <header class="header fixed-top" id="header">
@@ -79,78 +83,178 @@
                     <h3>كل ما يحتاجه ابتسامتك</h3>
                     <p>لدينا جميع الخدمات اللازمة لابتسامة صحية وواثقة، بالإضافة إلى تجربة مرضى لا مثيل لها. نحن يفتخرون بالاعتراف بهم من قبل المجتمعات التي نعيش فيها ونخدمها!</p>
                     <ul class="list-group">
-                        <li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#service1">
-                            تركيب وتغليف الأسنان 
-                        </li>
-                        <div id="service1" class="collapse">
-                            <img src="path/to/image1.jpg" alt="تركيب وتغليف الأسنان" class="img-fluid">
-                            <p>السعر: 1000 MAD</p>
-                        </div>
-                        
-                        <li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#service2">
-                            ترميم الاسنان المكسورة 
-                        </li>
-                        <div id="service2" class="collapse">
-                            <img src="path/to/image2.jpg" alt="ترميم الاسنان المكسورة" class="img-fluid">
-                            <p>السعر: 800 MAD</p>
-                        </div>
-                        
-                        <li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#service3">
-                            حشو الاسنان (العمارة) 
-                        </li>
-                        <div id="service3" class="collapse">
-                            <img src="path/to/image3.jpg" alt="حشو الاسنان" class="img-fluid">
-                            <p>السعر: 500 MAD</p>
-                        </div>
-                        
-                        <li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#service4">
-                            تبيض الاسنان بالطريقة الصحيحة و الطبيعية 
-                        </li>
-                        <div id="service4" class="collapse">
-                            <img src="path/to/image4.jpg" alt="تبيض الاسنان" class="img-fluid">
-                            <p>السعر: 600 MAD</p>
-                        </div>
-                        
-                        <li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#service5">
-                            هوليوود سمايل و سناب سمايل 
-                        </li>
-                        <div id="service5" class="collapse">
-                            <img src="path/to/image5.jpg" alt="هوليوود سمايل" class="img-fluid">
-                            <p>السعر: 1500 MAD</p>
-                        </div>
-                        
-                        <li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#service6">
-                            les facettes composite 
-                        </li>
-                        <div id="service6" class="collapse">
-                            <img src="path/to/image6.jpg" alt="les facettes composite" class="img-fluid">
-                            <p>السعر: 1200 MAD</p>
-                        </div>
-                        
-                        <li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#service7">
-                            طقم الاسنان 
-                        </li>
-                        <div id="service7" class="collapse">
-                            <img src="path/to/image7.jpg" alt="طقم الاسنان" class="img-fluid">
-                            <p>السعر: 700 MAD</p>
-                        </div>
-                        
-                        <li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#service8">
-                            لباغ تقويم اسنان 
-                        </li>
-                        <div id="service8" class="collapse">
-                            <img src="path/to/image8.jpg" alt="لباغ تقويم اسنان" class="img-fluid">
-                            <p>السعر: 900 MAD</p>
-                        </div>
-                        
-                        <li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#service9">
-                            تزيين اسنان 
-                        </li>
-                        <div id="service9" class="collapse">
-                            <img src="path/to/image9.jpg" alt="تزيين اسنان" class="img-fluid">
-                            <p>السعر: 400 MAD</p>
-                        </div>
+                        <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+        data-media='["path/to/image1.jpg", "path/to/image2.jpg"]' 
+        data-title="تركيب وتغليف الأسنان" 
+        data-videos='["path/to/video1.mp4"]' 
+        data-price="1000 MAD">
+        تركيب وتغليف الأسنان
+    </li>
+    <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+        data-media='["path/to/image3.jpg"]' 
+        data-title="ترميم الاسنان المكسورة" 
+        data-videos='["path/to/video2.mp4"]' 
+        data-price="800 MAD">
+        ترميم الاسنان المكسورة
+    </li>
+    <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+        data-media='["path/to/image4.jpg"]' 
+        data-title="حشو الاسنان (العمارة)" 
+        data-videos='["path/to/video3.mp4"]' 
+        data-price="500 MAD">
+        حشو الاسنان (العمارة)
+    </li>
+    <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+        data-media='["path/to/image5.jpg"]' 
+        data-title="تبيض الاسنان بالطريقة الصحيحة و الطبيعية" 
+        data-videos='["path/to/video4.mp4"]' 
+        data-price="600 MAD">
+        تبيض الاسنان بالطريقة الصحيحة و الطبيعية
+    </li>
+    <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+        data-media='["snaponsmile/snaponsmile1.jpeg"]' 
+        data-title="هوليوود سمايل و سناب سمايل" 
+        data-videos='["path/to/video5.mp4"]' 
+        data-price="1500 MAD">
+        هوليوود سمايل و سناب سمايل
+    </li>
+    <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+        data-media='["facettes/facite1.jpeg", "facettes/facite2.jpeg", "facettes/facite3.jpeg", "facettes/facite4.jpeg", "facettes/facite6.jpeg", "facettes/facite8.jpeg"]' 
+        data-title="les facettes composite" 
+        data-videos='["facettes/facite5.mp4", "facettes/facite7.mp4", "facettes/facite9.mp4"]' 
+        data-price="1200 MAD">
+        les facettes composite
+    </li>
+    <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+        data-media='["path/to/image7.jpg"]' 
+        data-title="طقم الاسنان" 
+        data-videos='["path/to/video6.mp4"]' 
+        data-price="700 MAD">
+        طقم الاسنان
+    </li>
+    <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+        data-media='["path/to/image8.jpg"]' 
+        data-title="لباغ تقويم اسنان" 
+        data-videos='["path/to/video7.mp4"]' 
+        data-price="900 MAD">
+        لباغ تقويم اسنان
+    </li>
+    <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+        data-media='["path/to/image9.jpg"]' 
+        data-title="تزيين اسنان" 
+        data-videos='["path/to/video8.mp4"]' 
+        data-price="400 MAD">
+        تزيين اسنان
+    </li>
                     </ul>
+
+                <!-- Modal -->
+                <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body text-center">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <h5 id="galleryTitle" class="mb-3"></h5>
+                                <img id="modalImage" class="img-fluid d-none" width="40%" />
+                                <video id="modalVideo" controls width="50%" class="d-none">
+                                    <source id="videoSource" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="mt-3">
+                                    <button id="prevButton" class="btn btn-secondary">→</button>
+                                    <button id="nextButton" class="btn btn-secondary">←</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <script>
+                    const modal = document.getElementById('galleryModal');
+                    const modalImage = document.getElementById('modalImage');
+                    const modalVideo = document.getElementById('modalVideo');
+                    const videoSource = document.getElementById('videoSource');
+                    const galleryTitle = document.getElementById('galleryTitle');
+                    
+                    let mediaList = [];
+                    let currentIndex = 0;
+
+                    modal.addEventListener('show.bs.modal', event => {
+                        const button = event.relatedTarget;
+                        const media = button.getAttribute('data-media');
+                        const title = button.getAttribute('data-title');
+                        const videos = JSON.parse(button.getAttribute('data-videos') || "[]");
+                        
+                        // Set the title
+                        galleryTitle.textContent = title;
+                        
+                        // Prepare media list
+                        mediaList = [media, ...videos];
+                        currentIndex = 0;
+                        
+                        // Display the first media
+                        displayMedia(currentIndex);
+                    });
+
+                    function displayMedia(index) {
+                        const currentMedia = mediaList[index];
+
+                        if (currentMedia.endsWith('.mp4')) {
+                            modalVideo.classList.remove('d-none');
+                            modalImage.classList.add('d-none');
+                            videoSource.src = currentMedia;
+                            modalVideo.load();
+                        } else {
+                            modalImage.classList.remove('d-none');
+                            modalVideo.classList.add('d-none');
+                            modalImage.src = currentMedia;
+                        }
+
+                        document.getElementById('prevButton').disabled = index === 0;
+                        document.getElementById('nextButton').disabled = index === mediaList.length - 1;
+                    }
+
+                    document.getElementById('prevButton').addEventListener('click', () => {
+                        if (currentIndex > 0) {
+                            currentIndex--;
+                            displayMedia(currentIndex);
+                        }
+                    });
+
+                    document.getElementById('nextButton').addEventListener('click', () => {
+                        if (currentIndex < mediaList.length - 1) {
+                            currentIndex++;
+                            displayMedia(currentIndex);
+                        }
+                    });
+                    modal.addEventListener('show.bs.modal', event => {
+                        const button = event.relatedTarget;
+                        const media = JSON.parse(button.getAttribute('data-media'));
+                        const title = button.getAttribute('data-title');
+                        const videos = JSON.parse(button.getAttribute('data-videos') || "[]");
+                        const price = button.getAttribute('data-price');
+                        
+                        // Set the title and price
+                        galleryTitle.textContent = title;
+                        
+                        // Prepare media list
+                        mediaList = [...media, ...videos];
+                        currentIndex = 0;
+                        
+                        // Display the first media
+                        displayMedia(currentIndex);
+                    
+                        // Display the price
+                        const priceElement = document.createElement('p');
+                        priceElement.textContent = `السعر: ${price}`;
+                        modal.querySelector('.modal-body').appendChild(priceElement);
+                    });
+                    modal.addEventListener('hide.bs.modal', () => {
+                        const priceElement = modal.querySelector('.modal-body p:last-child');
+                        if (priceElement) {
+                            priceElement.remove();
+                        }
+                    });
+                </script>
                     <!-- <ul>
                         <li> تركيب وتغليف الأسنان </li>
                         <li>ترميم الاسنان المكسورة </li>
@@ -352,5 +456,32 @@
     
     <script src="./index.js"></script>
     </script>
+        <script>
+            const modals = document.querySelectorAll('[id^="modalList"]');
+            
+            modals.forEach(modal => {
+                modal.addEventListener('show.bs.modal', event => {
+                    const button = event.relatedTarget; // Button that triggered the modal
+                    const media = button.getAttribute('data-media');
+                    const type = button.getAttribute('data-type');
+        
+                    const modalImage = modal.querySelector('img');
+                    const modalVideo = modal.querySelector('video');
+                    const videoSource = modal.querySelector('source');
+        
+                    if (type === 'video') {
+                        modalVideo.classList.remove('d-none');
+                        modalImage.classList.add('d-none');
+                        videoSource.src = media;
+                        modalVideo.load();
+                    } else {
+                        modalImage.classList.remove('d-none');
+                        modalVideo.classList.add('d-none');
+                        modalImage.src = media;
+                    }
+                });
+            });
+        </script>
+        
 </body>
 </html>
