@@ -113,6 +113,15 @@ section{
     background-position: center;
 }
 
+.more-details {
+    background-color: transparent;
+    color: #00b8b8;
+    font-size: small;
+    display: block;
+    margin: 10px auto 0px auto;
+    text-align: center;
+}
+
 .home .content{
     width: 50rem;
     position: absolute;
@@ -182,8 +191,11 @@ section{
     content: "🦷";
     position: absolute;
     right: 10px;
+    bottom: 30px;
     font-size: 1.5rem;
 }
+
+
 
 .services{
     background: #eee;
