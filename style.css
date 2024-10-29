@@ -461,6 +461,14 @@ section{
      .footer{
          height: fit-content;
      }
+     .home .content {
+        position: absolute;
+        left:20px;
+        margin-top: 10px;
+     }
+     .home .content p {
+        font-size: 1.7rem;
+     }
 }
 
 @media (max-width:450px){
@@ -473,11 +481,7 @@ section{
         margin-bottom: 2rem;
     }
 
-    .home .content {
-        top:225px;
-        left: 25px;
-        width:80%;
-    }
+    
 
     .home .content h3 {
         font-size: 4rem;
